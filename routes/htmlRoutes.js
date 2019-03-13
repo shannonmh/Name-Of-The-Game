@@ -1,27 +1,43 @@
-var db = require("../models");
+var games_db = require("../models");
 
-module.exports = function(app) {
-  // Load index page
-  app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+module.exports = function (app) {
+  // Load home page
+  app.get("/", function (req, res) {
+    res.sendFile(path.join(_dirname, '../public/home.html'))
+    // games_db.games.findAll({}).then(function(games_db) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: games_db
+    //   });
+    // });
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+
+  // Load suggestedGames page based on id
+  app.get("/suggestedGames/:id", function (req, res) {
+    res.sendFile(path.join(_dirname, '../public/suggestedGames.html'))
+    // games_db.Example.findOne({ where: { id: req.params.id } }).then(function(games_db) {
+    //   res.render("example", {
+    //     example: games_db
+    //   });
+    // });
   });
+
+
+  // Load gamesQuiz page
+  app.get("/gamesQuiz", function (req, res) {
+    res.sendFile(path.join(_dirname, '../public/gamesQuiz.html'))
+  });
+
+
+  // Load viewAllGames page
+  app.get("/viewAllGames", function (req, res) {
+    res.sendFile(path.join(_dirname, '../public/viewAllGames.html'))
+  });
+
 
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  app.get("*", function (req, res) {
     res.render("404");
   });
 };

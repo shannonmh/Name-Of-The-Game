@@ -1,24 +1,24 @@
-var db = require("../models");
+var games_db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  app.get("/api/games", function(req, res) {
+    games_db.games.findAll({}).then(function(games_db) {
+      res.json(games_db);
     });
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  app.post("/api/games", function(req, res) {
+    games_db.games.create(req.body).then(function(games_db) {
+      res.json(games_db);
     });
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
+  app.delete("/api/games/:id", function(req, res) {
+    games_db.games.destroy({ where: { id: req.params.id } }).then(function(games_db) {
+      res.json(games_db);
     });
   });
 };
