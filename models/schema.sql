@@ -22,6 +22,6 @@ CREATE TABLE games (
   genre_RolePlayer BOOLEAN NULL,
   genre_Other BOOLEAN NULL,
   number_of_players INT NOT NULL,
-  mature_audience BOOLEAN NULL,
+  
   PRIMARY KEY (id)
 );
