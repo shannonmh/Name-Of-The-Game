@@ -42,6 +42,7 @@ VALUES ("Trivial Pursuit", 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 2);
 
 INSERT INTO games(game_name, type_dice, type_card, type_board, type_other, genre_ActionAdventure, genre_Strategy, genre_LogicTrivia, genre_Mature, genre_Educational, genre_Fantasy, genre_PeoplePlacement, genre_RolePlayer, genre_Other, number_of_players)
 VALUES ("Secret Hitler", 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 5);
+
 INSERT INTO games (game_name, type_dice, type_card, type_board, type_other, genre_ActionAdventure, genre_Strategy, genre_LogicTrivia, genre_Mature, genre_Educational, genre_Fantasy, genre_PeoplePlacement, genre_RolePlayer, genre_Other, number_of_players)
 VALUES ("Connect 4", 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2);
 
