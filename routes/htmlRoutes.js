@@ -1,4 +1,4 @@
-var games_db = require("../models");
+var path = require("../models");
 
 module.exports = function (app) {
   // Load home page
