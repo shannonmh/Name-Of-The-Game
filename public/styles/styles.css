@@ -14,11 +14,27 @@
   background: whitesmoke;
 }
 #home {
-  background-image: url("../img/game_bg_white2.png");
+  background-image: url("../styles/imgs/game_bg_white2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #container1 {
   padding: 5px 20px 25px 20px;
   background: whitesmoke;
+}
+
+.test-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.test-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: relative; 
+  opacity: 1; 
 }

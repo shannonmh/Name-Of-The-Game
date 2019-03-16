@@ -1,5 +1,7 @@
 var path = require("../models");
 
+// var path = require("path");
+
 module.exports = function (app) {
   // Load home page
   app.get("/", function (req, res) {
