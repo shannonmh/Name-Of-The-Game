@@ -174,7 +174,50 @@
     </footer>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/js/index.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <script type="text/javascript" src="js/materialize.min.js">
+   
+
+		$(document).ready(function() {
+			$('select').material_select();
+			$('.modal').modal({
+				dismissible: false, 
+				opacity: .5, 
+				inDuration: 300, 
+				outDuration: 200, 
+				startingTop: '4%', 
+				endingTop: '10%' 
+			});
+        });
+        
+		// Activate submit button
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			// Gather user inputs
+			var userInput = {
+				name: $('#userName').val().trim(),
+				photo: $('#userPhoto').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					
+				]
+			};
+			// console.log('userInput = ' + JSON.stringify(userInput));
+			// Add user inputs to friends list
+			$.post('/api/games', userInput)
+      		.done(function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+      			// Set the name and image values of game match
+      			$('#userMatch').html(data.matchName);
+		    	$("#userMatchImage").attr("src", data.matchImage);
+		    	// Pop open the modal dialog
+      			$('#modal1').modal('open');
+      		});
+		});
+	</script>
 
 </body>
