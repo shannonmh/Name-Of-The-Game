@@ -9,6 +9,7 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
   <!-- Compiled and minified JavaScript -->
@@ -20,94 +21,75 @@
 </head>
 
 <body>
-  <div id="home">
+  <div>
     <nav class="col s12 m6 l3" id="Header">
       <div class="nav-wrapper">
         <a href="home.html" class="brand-logo right hide-on-med-and-down">Home</a>
         <ul id="nav-mobile" class="left hide-on-sm-and-down">
           <li><a href="../models/seeds.sql">All Games</a></li>
-    
+          
           <li><a href="gamesQuiz.html">Survey</a></li>
         </ul>
       </div>
     </nav>
-    <br>
-    <br>
-    <div class="container" id="container1">
-      <div class="row">
-        <div class="col-12 text-white">
-          <h1 id="app-title" class="center">Name of The Game</h1>
-          
+    <div id="home">
+      <div class="container" id="home-header">
+        <div class="row">
+          <div class="col-12 text-white">
+            <h1 id="app-title" class="center">Name of The Game</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-white">
-          <p class="left">Welcome! Are you a gamer? Do you sometimes find it hard to find 
-            games you enjoy? There are so many games out there and we want to help you find
-            the perfect game for you and your friends! Take our survey by clicking on the Survey
-            link above and we will give you a Name of the Game that best fits your answers.  We have also provided you with 
-            a How-To link and Amazon link for you! Thank you for visiting our site. We hope you enjoy
-            gaming with your friends! 
-          </p>
+        <div class="row">
+          <div class="col-12 text-white">
+            <p class="left">Welcome! Are you a gamer? Do you sometimes find it hard to find
+              games you enjoy? There are so many games out there and we want to help you find
+              the perfect game for you and your friends! Take our survey by clicking on the Survey
+              link above and we will give you a Name of the Game that best fits your answers. We have also provided you
+              with a How-To link and Amazon link for you! Thank you for visiting our site. We hope you enjoy gaming with
+              your friends!
+            </p>
+          </div>
+    
         </div>
       </div>
     </div>
     <br>
     <br>
-    <div class="container" id="container2">
+    <div class="container" id="links-container">
       <div class="row">
-        <div class="col-12  text-white">
-          <div class="container" id="container2">
-            <div class="row">
-              <div class="col-12 offset-1 text-white">
-                <div class="row">
-                  <div class="col s12 m4">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m4">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col s12 m4">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src="images/sample-1.jpg">
-                        <span class="card-title">Card Title</span>
-                      </div>
-                      <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                          I am convenient because I require little markup to use effectively.</p>
-                      </div>
-                      <div class="card-action">
-                        <a href="#">This is a link</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="../public/styles/imgs/placeholder.png">
+              <span class="card-title animated infinite bounce delay-2s"><a href="../models/seeds.sql">View All Games</a></span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+                <img src="../public/styles/imgs/placeholder.png">
+                <span class="card-title animated infinite bounce delay-2s"><a href="gamesQuiz.html">Take The Survey</a></span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+                <img src="../public/styles/imgs/placeholder.png">
+                <span class="card-title animated infinite bounce delay-2s" id="card-link"><a href="#">View All Categories</a></span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
             </div>
           </div>
         </div>
@@ -115,22 +97,10 @@
     </div>
     <br>
     <br>
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col s5 s12">
-            <h5 class="white-text center">Name the Game</h5>
-            <p class="grey-text text-lighten-4 center">You can use rows and columns here to organize your footer
-              content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
+    <footer class="page-footer footer-bg">
         <div class="container text-align: center">
-          © 2014 Copyright Text
+          Name of the Game © 2019
         </div>
-      </div>
     </footer>
   </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
