@@ -24,5 +24,6 @@ CREATE TABLE games (
   number_of_players INT NOT NULL,
   link_to_youtube VARCHAR(1000) NULL,
   link_to_amazon VARCHAR(1000) NULL,
+  
   PRIMARY KEY (id)
 );
