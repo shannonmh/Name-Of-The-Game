@@ -11,8 +11,12 @@
   },
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
+    "dotenv": "^6.0.0",
+=======
     "animate.css": "^3.7.0",
     "dotenv": "^6.2.0",
+>>>>>>> 0c53669b5ece27bfb204fc47f730a9718913fa21
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "mysql2": "^1.5.3",

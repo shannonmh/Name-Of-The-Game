@@ -57,8 +57,12 @@ var refreshExamples = function() {
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {
   event.preventDefault();
-  var form1 = {
-    $()
+  var profile = {
+    introvert: null,
+    mature: null,
+    genre: null,
+    educational: null,
+    type: null
   }
   var example = {
     text: $exampleText.val().trim(),

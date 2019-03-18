@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>The Name of the Game</title>
+    <link rel="stylesheet" type="text/css" href=public/styles/imgs/modalsytle.css> <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <section id="mainmiddlesection">
+
+        <!-- Trigger/Open The Modal -->
+        <div><button id="myBtn">Insert Game Name Here</button></div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="division">Here is the Name of the Game:
+                </p>
+
+                <p id="division">Put name of game here
+                </p>
+
+                <p id="division">Put image of game Here
+                </p>
+
+                <div id="viewAndPurchaseImages">
+                    <a id="YouTube"><img src="/public/styles/imgs/YouTubeIcon.png" alt="YouTube" style="width:150px"></a>
+                    <a id="Amazon"><img src="/public/styles/imgs/AmazonIcon.png" alt="Amazon" style="width:150px"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var modal = document.getElementById('myModal');
+
+            var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+
+    </section>
+
+</body>
+
+</html>
