@@ -22,6 +22,7 @@ CREATE TABLE games (
   genre_RolePlayer BOOLEAN NULL,
   genre_Other BOOLEAN NULL,
   number_of_players INT NOT NULL,
+  gameImage VARCHAR(255) NULL,
   link_to_youtube VARCHAR(1000) NULL,
   link_to_amazon VARCHAR(1000) NULL,
   

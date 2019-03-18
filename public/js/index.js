@@ -21,12 +21,6 @@ var API = {
       url: "api/examples",
       type: "GET"
     });
-  },
-  deleteExample: function(id) {
-    return $.ajax({
-      url: "api/examples/" + id,
-      type: "DELETE"
-    });
   }
 };
 
@@ -63,7 +57,13 @@ var refreshExamples = function() {
 // Save the new example to the db and refresh the list
 var handleFormSubmit = function(event) {
   event.preventDefault();
-
+  var profile = {
+    introvert: null,
+    mature: null,
+    genre: null,
+    educational: null,
+    type: null
+  }
   var example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim()
@@ -82,17 +82,17 @@ var handleFormSubmit = function(event) {
   $exampleDescription.val("");
 };
 
-// handleDeleteBtnClick is called when an example's delete button is clicked
-// Remove the example from the db and refresh the list
-var handleDeleteBtnClick = function() {
-  var idToDelete = $(this)
-    .parent()
-    .attr("data-id");
+//  handleDeleteBtnClick is called when an example's delete button is clicked
+//  Remove the example from the db and refresh the list
+// var handleDeleteBtnClick = function() {
+//   var idToDelete = $(this)
+//     .parent()
+//     .attr("data-id");
 
-  API.deleteExample(idToDelete).then(function() {
-    refreshExamples();
-  });
-};
+//   API.deleteExample(idToDelete).then(function() {
+//     refreshExamples();
+//   });
+// };
 
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);

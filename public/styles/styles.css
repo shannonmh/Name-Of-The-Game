@@ -2,8 +2,13 @@
   line-height: 2.5;
 }
 
+body {
+  background-color: #F2EEDB;
+}
+
 #Header {
   padding: 0px 120px 5px 40px;
+  background-color: #F06D54;
 }
 .list-group-item {
   line-height: 2.5;
@@ -13,12 +18,53 @@
   padding: 50px 20px 25px 20px;
   background: whitesmoke;
 }
+
+#links-container {
+  padding: 50px 20px 25px 20px;
+}
+
 #home {
-  background-image: url("../img/game_bg_white2.png");
+  background-image: url("../styles/imgs/game_bg_white2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
+  padding-top: 75px;
 }
 #container1 {
   padding: 5px 20px 25px 20px;
   background: whitesmoke;
+}
+
+#home-header {
+  padding: 5px 20px 25px 20px;
+  background-color: rgba(242, 238, 219, 0.7);
+}
+
+.test-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+#card-link {
+  color: #20585D;
+}
+
+.test-radio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+img {
+  height: 360px;
+  width: 280px
+}
+
+.footer-bg {
+  background-color: #F06D54;
+  color: white;
+}
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: relative; 
+  opacity: 1; 
 }
