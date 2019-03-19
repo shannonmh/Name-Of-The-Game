@@ -19,7 +19,7 @@ var profile = {
 //   saveExample: function (example) {
 //     return $.ajax({
 //       headers: {
-//         "Content-Type": "application/json"
+//         "Content-Type": "api/games"
 //       },
 //       type: "POST",
 //       url: "api/examples",
@@ -28,7 +28,7 @@ var profile = {
 //   },
 //   getExamples: function () {
 //     return $.ajax({
-//       url: "api/examples",
+//       url: "api/games",
 //       type: "GET"
 //     });
 //   }
@@ -120,6 +120,10 @@ $("#submitBtn").on('click', function () {
   profile.type = $("input[name='Question-5']:checked").val();
 
   console.log(profile)
+
+  $.get("/api/games", profile).then(function(data){
+    console.log(data);
+  })
 
   // if (radioValue) {
   //   alert("Your are a - " + radioValue);
