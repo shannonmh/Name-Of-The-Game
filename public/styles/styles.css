@@ -68,3 +68,67 @@ img {
   position: relative; 
   opacity: 1; 
 }
+
+
+.cc-selector input{
+  margin:0;padding:0;
+  -webkit-appearance:none;
+     -moz-appearance:none;
+          appearance:none;
+}
+.Introvert{background-image:url("./imgs/introvert.jpg");}
+.Extrovert{background-image:url("./imgs/extrovert.jpg");}
+
+.kid{background-image:url("./imgs/lukcyCharms.jpg");}
+.adult{background-image:url("./imgs/raisinBran.jpeg");}
+
+.Horror{background-image:url("./imgs/getOut.jpg");}
+.Education{background-image:url("./imgs/princessFrog.jpg");}
+.Fantasy{background-image:url("./imgs/prisonerAzkaban.jpg");}
+.Mystery{background-image:url("./imgs/sherlock.jpg");}
+.Action{background-image:url("./imgs/bourne.jpg");}
+.RolePlayer{background-image:url("./imgs/werethemillers.jpg");}
+.Strategy{background-image:url("./imgs/fury.jpg");}
+.LogicTrivia{background-image:url("./imgs/21.jpeg");}
+
+.Park{background-image:url("./imgs/amusementpark.jpg");}
+.Museum{background-image:url("./imgs/museum.jpg");}
+
+.Polkadots{background-image:url("./imgs/dots.png");}
+.Hearts{background-image:url("./imgs/hearts.jpg");}
+.Chevron{background-image:url("./imgs/chevron.jpg");}
+.Other{background-image:url("./imgs/other.jpg");}
+
+.form {
+display: block;
+text-align: center;
+}
+.cc-selector input:active +.personality-cc{opacity: .9;}
+.cc-selector input:checked +.personality-cc{
+  -webkit-filter: none;
+     -moz-filter: none;
+          filter: none;
+}
+.personality-cc{
+  cursor:pointer;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+  width:280px;height:360px;
+  -webkit-transition: all 100ms ease-in;
+     -moz-transition: all 100ms ease-in;
+          transition: all 100ms ease-in;
+  -webkit-filter: brightness(80%) grayscale(2%) opacity(.7);
+     -moz-filter: brightness(80%) grayscale(2%) opacity(.7);
+          filter: brightness(80%) grayscale(2%) opacity(.7);
+}
+.personality-cc:hover{
+  -webkit-filter: brightness(none) grayscale(none) opacity(.9);
+     -moz-filter: brightness(none) grayscale(none) opacity(.9);
+          filter: brightness(none) grayscale(none) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
