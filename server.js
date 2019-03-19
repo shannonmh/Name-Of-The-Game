@@ -10,7 +10,7 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("public")); // localhost:3000/assets/js/index.js localhost:3000/styles/imgs/Monopoly.png
 
 // Handlebars
 app.engine(

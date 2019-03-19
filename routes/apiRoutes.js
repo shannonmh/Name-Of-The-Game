@@ -1,4 +1,6 @@
-var path = require("path")
+var path = require("path");
+
+var Sequelize = require('sequelize');
 
 var games_db = require("../models");
 
@@ -13,15 +15,29 @@ module.exports = function (app) {
 
   // Get selected games (based off of quiz results)
   app.get("/api/games", function (req, res) {
-    games_db.games.findAll({
+    var whereCondition = {
       where: {
-        introvert: req.params.profile.introvert,
-        mature: req.params.profile.mature,
-        "genre_" + req.params.profile.genre: 1,
-        educational: req.params.profile.educational,
+        genre_Mature: req.params.profile.mature,
+        genre_Educational: req.params.profile.educational,
         "type_" + req.params.profile.type: 1
       }
-    }).then(function (games_db) {
+    };
+
+    if (req.params.profile.introvert) {
+      whereCondition.where.numberOfPlayers = {
+        [Sequelize.Op.lt]: 3
+      } 
+    } else {
+      whereCondition.where.numberOfPlayers = {
+        [Sequelize.Op.gt]: 3
+      }
+    }
+
+    whereCondition.where["genre_" + req.params.profile.genre] = 1;
+    whereCondition.where["type_" + req.params.profile.type] = 1;
+
+
+    games_db.games.findAll(whereCondition).then(function (games_db) {
       res.json(games_db);
     });
   });

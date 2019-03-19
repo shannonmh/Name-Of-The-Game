@@ -1,3 +1,5 @@
+import { createConnection } from "net";
+
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
@@ -64,10 +66,20 @@ var handleFormSubmit = function(event) {
     educational: null,
     type: null
   }
+
+  // Get all values from the form and populate the profile variable
+  // Make AJAX call to GET /api/games
+  // .then with the JSON, populate the page with the "games"
+    
+
+
+
   var example = {
     text: $exampleText.val().trim(),
     description: $exampleDescription.val().trim()
   };
+
+  
 
   if (!(example.text && example.description)) {
     alert("You must enter an example text and description!");
