@@ -18,8 +18,7 @@ module.exports = function (app) {
     var whereCondition = {
       where: {
         genre_Mature: req.params.profile.mature,
-        genre_Educational: req.params.profile.educational,
-        "type_" + req.params.profile.type: 1
+        genre_Educational: req.params.profile.educational
       }
     };
 
