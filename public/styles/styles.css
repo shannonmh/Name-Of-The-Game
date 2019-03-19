@@ -82,11 +82,11 @@ img {
 .kid{background-image:url("./imgs/lukcyCharms.jpg");}
 .adult{background-image:url("./imgs/raisinBran.jpeg");}
 
-.Horror{background-image:url("./imgs/getOut.jpg");}
-.Education{background-image:url("./imgs/princessFrog.jpg");}
+.PeoplePlacement{background-image:url("./imgs/getOut.jpg");}
+.Educational{background-image:url("./imgs/princessFrog.jpg");}
 .Fantasy{background-image:url("./imgs/prisonerAzkaban.jpg");}
 .Mystery{background-image:url("./imgs/sherlock.jpg");}
-.Action{background-image:url("./imgs/bourne.jpg");}
+.ActionAdventure{background-image:url("./imgs/bourne.jpg");}
 .RolePlayer{background-image:url("./imgs/werethemillers.jpg");}
 .Strategy{background-image:url("./imgs/fury.jpg");}
 .LogicTrivia{background-image:url("./imgs/21.jpeg");}
@@ -94,10 +94,10 @@ img {
 .Park{background-image:url("./imgs/amusementpark.jpg");}
 .Museum{background-image:url("./imgs/museum.jpg");}
 
-.Polkadots{background-image:url("./imgs/dots.png");}
-.Hearts{background-image:url("./imgs/hearts.jpg");}
-.Chevron{background-image:url("./imgs/chevron.jpg");}
-.Other{background-image:url("./imgs/other.jpg");}
+.dice{background-image:url("./imgs/dots.png");}
+.card{background-image:url("./imgs/heartsone.jpg");}
+.board{background-image:url("./imgs/chevron.jpg");}
+.other{background-image:url("./imgs/other.jpg");}
 
 .form {
 display: block;
