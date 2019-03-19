@@ -45,10 +45,6 @@ body {
   justify-content: space-around;
 }
 
-.bottomButton {
-  
-}
-
 #card-link {
   color: #20585D;
 }
@@ -99,7 +95,7 @@ img {
 .Museum{background-image:url("./imgs/museum.jpg");}
 
 .dice{background-image:url("./imgs/dots.png");}
-.card{background-image:url("./imgs/heartsone.jpg");}
+.cardGame{background-image:url("./imgs/heartsone.jpg");}
 .board{background-image:url("./imgs/chevron.jpg");}
 .other{background-image:url("./imgs/other.jpg");}
 
