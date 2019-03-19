@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Express Library</title>
+  <title>Name Of The Game</title>
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -26,9 +26,9 @@
       <div class="nav-wrapper">
         <a href="home.html" class="brand-logo right hide-on-med-and-down">Home</a>
         <ul id="nav-mobile" class="left hide-on-sm-and-down">
-          <li><a href="../models/seeds.sql">All Games</a></li>
-          
-          <li><a href="gamesQuiz.html">Survey</a></li>
+          <li><a class="move-link">All Games</a></li>
+
+          <li><a class="move-link">Survey</a></li>
         </ul>
       </div>
     </nav>
@@ -49,47 +49,46 @@
               your friends!
             </p>
           </div>
-    
+
         </div>
       </div>
     </div>
     <br>
     <br>
-    <div class="container" id="links-container">
+    <div class="container move-here" id="links-container">
       <div class="row">
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
               <img src="../public/styles/imgs/placeholder.png">
-              <span class="card-title animated infinite bounce delay-2s"><a href="../models/seeds.sql">View All Games</a></span>
+              <span class="card-title animated infinite bounce delay-2s"><a href="../models/seeds.sql">View All
+                  Games</a></span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>Already know what kinds of games you like? Or just curious to see what games we have? Click here to view all the games we have in our database and the links to them.</p>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-                <img src="../public/styles/imgs/placeholder.png">
-                <span class="card-title animated infinite bounce delay-2s"><a href="gamesQuiz.html">Take The Survey</a></span>
+              <img src="../public/styles/imgs/survey3.png">
+              <span class="card-title animated infinite bounce delay-2s"><a href="gamesQuiz.html">Take The
+                  Survey</a></span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+              <p>Want to find a new game to play? Want to explore games you probably haven't heard of yet? Take our quiz to find out which game is perfect for you!</p>
             </div>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card">
             <div class="card-image">
-                <img src="../public/styles/imgs/placeholder.png">
-                <span class="card-title animated infinite bounce delay-2s" id="card-link"><a href="#">View All Categories</a></span>
+              <img src="../public/styles/imgs/placeholder.png">
+              <span class="card-title animated infinite bounce delay-2s" id="card-link"><a href="https://github.com/shannonmh/Project2">Github Repository</a></span>
             </div>
             <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+              <p>Want to view all the hard work that went behind the code for our site? Click here to view our github repository and see all the work that went into it!</p>
             </div>
           </div>
         </div>
@@ -98,12 +97,13 @@
     <br>
     <br>
     <footer class="page-footer footer-bg">
-        <div class="container text-align: center">
-          Name of the Game © 2019
-        </div>
+      <div class="container text-align: center">
+        Name of the Game © 2019
+      </div>
     </footer>
   </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="/js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/home.js"></script>
 
 </body>
