@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "Bigd903453!",
+      "password": "catsrock!",
       "database": "games_db",
       "host": "127.0.0.1",
       "port": 3306,
@@ -17,7 +17,7 @@
     },
     "production": {
       "username": "root",
-      "password": null,
+      "password": "Catsrock2!",
       "database": "database_production",
       "host": "127.0.0.1",
       "port": 3306,
