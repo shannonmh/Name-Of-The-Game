@@ -122,7 +122,11 @@ $("#submitBtn").on('click', function () {
   console.log(profile)
 
   $.get("/api/games", profile).then(function(data){
-    console.log(data);
+    var $gameResultsContainer = $('#game-result');
+
+    $gameResultsContainer.append($('<h1>').text(data.game_name));
+    // TODO: Fix the URL
+    $gameResultsContainer.append($('<img>').attr('src', 'http://localhost:3000/styles/imgs/' + data.gameImage));
   })
 
   // if (radioValue) {

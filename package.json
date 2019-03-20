@@ -1,47 +1,35 @@
 {
   "name": "project2",
   "version": "1.0.0",
-  "description": "Project 2 Starter",
+  "description": "",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "lint": "eslint **/*.js --quiet",
-    "fix": "eslint --fix .",
-    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
-  },
-  "license": "ISC",
-  "dependencies": {
-<<<<<<< HEAD
-    "dotenv": "^6.0.0",
-=======
-    "animate.css": "^3.7.0",
-    "dotenv": "^6.2.0",
->>>>>>> 0c53669b5ece27bfb204fc47f730a9718913fa21
-    "express": "^4.16.4",
-    "express-handlebars": "^3.0.2",
-    "mysql2": "^1.5.3",
-    "path": "^0.12.7",
-    "sequelize": "^4.38.0"
-  },
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "mocha": "^5.2.0",
-    "prettier": "^1.13.7"
-  },
   "directories": {
     "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shannonmh/Project2.git"
   },
   "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/shannonmh/Project2/issues"
   },
-  "homepage": "https://github.com/shannonmh/Project2#readme"
+  "homepage": "https://github.com/shannonmh/Project2#readme",
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "chai": "^4.2.0",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.15.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "path": "^0.12.7",
+    "sequelize": "^5.1.0"
+  }
 }
