@@ -15,24 +15,24 @@ var profile = {
   type: null
 };
 // // The API object contains methods for each kind of request we'll make
-// var API = {
-//   saveExample: function (example) {
-//     return $.ajax({
-//       headers: {
-//         "Content-Type": "api/games"
-//       },
-//       type: "POST",
-//       url: "api/examples",
-//       data: JSON.stringify(example)
-//     });
-//   },
-//   getExamples: function () {
-//     return $.ajax({
-//       url: "api/games",
-//       type: "GET"
-//     });
-//   }
-// };
+var API = {
+  saveExample: function (example) {
+    return $.ajax({
+      headers: {
+        "Content-Type": "api/games"
+      },
+      type: "POST",
+      url: "api/examples",
+      data: JSON.stringify(example)
+    });
+  },
+  getExamples: function () {
+    return $.ajax({
+      url: "api/games",
+      type: "GET"
+    });
+  }
+};
 
 // // refreshExamples gets new examples from the db and repopulates the list
 // var refreshExamples = function () {
@@ -122,7 +122,11 @@ $("#submitBtn").on('click', function () {
   console.log(profile)
 
   $.get("/api/games", profile).then(function(data){
-    console.log(data);
+    var $gameResultsContainer = $('#game-result');
+
+    $gameResultsContainer.append($('<h1>').text(data.game_name));
+    // TODO: Fix the URL
+    $gameResultsContainer.append($('<img>').attr('src', 'http://localhost:3000/styles/imgs/' + data.gameImage));
   })
 
   // if (radioValue) {

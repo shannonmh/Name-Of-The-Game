@@ -8,9 +8,19 @@ var games_db = require("../models");
 module.exports = function (app) {
   // Get all examples
   app.get("/api/games", function (req, res) {
-    games_db.games.findAll({}).then(function (games_db) {
-      res.json(games_db);
-    });
+    // games_db.games.findAll({}).then(function (games_db) {
+    //   res.json(games_db);
+    // });
+
+    // TODO: Actually return a real game
+    var mockGame = {
+      id: 3, 
+      game_name: "Cards Against Humanity",
+      gameImage: "CardsAgainstHumanity.png",
+      link_to_youtube: "https://www.youtube.com/watch?v=9eRjn4Ken0c",
+    };
+
+    res.json(mockGame);
   });
 
   // Get selected games (based off of quiz results)
