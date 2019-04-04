@@ -4,6 +4,8 @@ Name of The Game
 
 An application for finding the right game that fits you or your circumstances. Using the application you can search through all of the games or take a quick survey which compares your results to find the best matching game(s). The survey is built like a buzzfeed quiz that makes it short, easy, and fun for the user to find new game.
 
+The live version of this app can be found here https://still-earth-66633.herokuapp.com/
+
 
 
 This application uses Node and MySQL to query and route data in the application. Express is the backend web framework used for this application and HTML is the frontend that makes the sight visible.
